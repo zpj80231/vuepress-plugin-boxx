@@ -1,0 +1,29 @@
+{
+  "name": "vuepress-plugin-boxx",
+  "version": "0.0.1",
+  "description": "Simplification of VuePress Custom Containers!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint-ext": "eslint --ext .js,.vue ./",
+    "eslint-fix": "eslint --fix --ext .js,.vue ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zpj80231/vuepress-plugin-boxx.git"
+  },
+  "keywords": [
+    "vuepress-theme-reco",
+    "boxx",
+    "vuepress"
+  ],
+  "author": "zpj80231 <zpj80231@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zpj80231/vuepress-plugin-boxx/issues"
+  },
+  "homepage": "https://zpj80231.github.io/znote",
+  "devDependencies": {
+    
+  }
+}
