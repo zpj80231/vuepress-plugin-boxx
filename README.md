@@ -1,9 +1,10 @@
 
-# <Boxx/>
+# Boxx
 
 ## 序言
 
 - 由于在引入默认的VuePress Custom Containers太过笨重了，故闲来无事对其做一层封装简化使用
+- 推荐在线观看使用说明[传送门](https://zpj80231.github.io/znote/categories/vuepress-plugin-boxx.html)，这样展示效果更加友好
 
 ## 使用
 
