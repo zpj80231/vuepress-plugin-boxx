@@ -70,10 +70,17 @@
 		},
 		methods: {
             getContent() {
+                if(this.list.length >= 100) return
                 axios.get('https://v1.jinrishici.com/all.json').then((response)=>{
-                    if(this.list.length >= 100) return
-                    let author = `<span style='font-size: 13px;'>`+response.data.author+`</span>`
-                    this.list.push({'title':response.data.origin+' • '+author,'content':response.data.content})
+                    let author = ` • <span style='font-size: 13px;'>`+response.data.author+`</span>`
+                    this.list.push({'title':response.data.origin+author,'content':response.data.content})
+				})
+				axios.get('https://v1.hitokoto.cn').then((response)=>{
+					let author = ''
+					if(response.data.from_who!=null) 
+						author = ` • <span style='font-size: 13px;'>`+response.data.from_who+`</span>`
+
+                    this.list.push({'title':response.data.from+author,'content':response.data.hitokoto})
                 })
             },
 			getShowType(type) {
